@@ -16,7 +16,6 @@
   --white-color: #fff;
   --title-color: #172b4d;
   --paragraph-color: #344563;
-
   --title-margin-bottom: 2rem;
 }
 
@@ -143,6 +142,7 @@ body {
   bottom: 1rem;
   right: 7rem;
 }
+
 .graph-5 {
   top: 3.5rem;
   left: 7rem;
