@@ -11,17 +11,25 @@
 
 /* css variables */
 :root {
+  /* colors */
   --primary-color: #344563;
   --secondary-color: #6070ff;
   --white-color: #fff;
   --title-color: #172b4d;
+  --paragraph-color: #344563;
+
+  /* margins */
+  --title-margin-bottom: 2rem;
 }
 
 /* general css */
-h1,
-p,
 ul {
   list-style: none;
+}
+
+p {
+  color: var(--paragraph-color);
+  margin-bottom: 1rem;
 }
 
 a {
@@ -35,6 +43,21 @@ img {
 
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: #E5E5E5;
+}
+
+.btn {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-bottom: .8rem;
+  transition: color 0.3s ease;
+}
+
+.btn:hover {
+  color: var(--primary-color);
 }
 
 /* header css */
@@ -59,4 +82,92 @@ body {
 
 .nav-menu {
   display: none;
+}
+
+/* hero section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 90vh;
+  background-color: var(--white-color);
+  /* background-color: antiquewhite; */
+  /* overflow: hidden; */
+  padding: 5rem 2rem 10rem 2rem;
+  border-bottom-left-radius: 100px 70px;
+}
+
+.hero-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--title-color);
+  line-height: 3.5rem;
+  margin-bottom: var(--title-margin-bottom);
+}
+
+.hero-description {
+  font-weight: 500;
+}
+
+.hero-social_Media {
+  max-width: 12rem;
+  justify-content: center;
+}
+
+.hero-social_Medias {
+  display: flex;
+  justify-content: space-between;
+}
+
+.m-icon:hover {
+  transform: scale(1);
+}
+
+/* background graphs */
+.graph {
+  position: absolute;
+}
+
+.graph-1 {
+  top: 1px;
+  right: -3rem;
+}
+
+.graph-2 {
+  top: 5px;
+  left: -2rem;
+}
+
+.graph-3 {
+  bottom: 11rem;
+  right: 5rem;
+}
+
+.graph-4 {
+  bottom: 1rem;
+  right: 7rem;
+}
+.graph-5 {
+  top: 3.5rem;
+  left: 7rem;
+}
+
+/* background circle */
+.circle {
+  position: absolute;
+}
+
+.circle-1 {
+  top: 1rem;
+  right: 10rem;
+}
+
+.circle-2 {
+  top: 13rem;
+  right: 4rem;
+}
+
+.circle-3 {
+  bottom: 3rem;
+  left: 4.5rem;
 }
