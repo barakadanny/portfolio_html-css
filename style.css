@@ -11,14 +11,12 @@
 
 /* css variables */
 :root {
-  /* colors */
   --primary-color: #344563;
   --secondary-color: #6070ff;
   --white-color: #fff;
   --title-color: #172b4d;
   --paragraph-color: #344563;
 
-  /* margins */
   --title-margin-bottom: 2rem;
 }
 
@@ -43,7 +41,7 @@ img {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 .btn {
@@ -52,7 +50,7 @@ body {
   font-weight: 500;
   letter-spacing: 1px;
   display: inline-block;
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
   transition: color 0.3s ease;
 }
 
@@ -91,8 +89,6 @@ body {
   position: relative;
   height: 90vh;
   background-color: var(--white-color);
-  /* background-color: antiquewhite; */
-  /* overflow: hidden; */
   padding: 5rem 2rem 10rem 2rem;
   border-bottom-left-radius: 100px 70px;
 }
