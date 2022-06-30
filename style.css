@@ -191,12 +191,11 @@ body {
 }
 
 .work-content {
-  padding: 0rem 0.6rem ;
+  padding: 0.1rem 0.6rem;
 }
 
 .work-title {
   color: var(--title-color);
-  margin: 0;
 }
 
 .work-chronical {
