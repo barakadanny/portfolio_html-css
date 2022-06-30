@@ -1,4 +1,4 @@
-# Portfolio Project template
+# Portfolio Project
 
 > This project is a Web developer Portfolio template
 
@@ -10,9 +10,6 @@
 ## Authors
 
 👤 **By Baraka Danny**
-
-- GitHub: [@barakadanny](https://github.com/barakadanny)
-- LinkedIn: [@danny-baraka](https://www.linkedin.com/in/danny-baraka-589156169/)
 
 ## 🤝 Contributing
 
