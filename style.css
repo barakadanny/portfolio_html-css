@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* base */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* css variables */
+:root {
+  --primary-color: #344563;
+  --secondary-color: #6070ff;
+  --white-color: #fff;
+  --title-color: #172b4d;
+  --paragraph-color: #344563;
+  --title-margin-bottom: 1.2rem;
+}
+
+/* general css */
+ul {
+  list-style: none;
+}
+
+p {
+  color: var(--paragraph-color);
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #e5e5e5;
+}
+
+.btn {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-bottom: 0.8rem;
+  transition: color 0.3s ease;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+/* header css */
+.nav {
+  display: flex;
+  background-color: var(--white-color);
+  height: 3.5rem;
+  padding: 0 1.8rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-text {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.nav-toggle:hover {
+  cursor: pointer;
+}
+
+.nav-menu {
+  display: none;
+}
+
+/* hero section */
+.hero {
+  position: relative;
+  background-color: var(--white-color);
+  border-bottom-left-radius: 100px 70px;
+  padding-top: clamp(5rem, 10vw, 10rem);
+  padding-bottom: clamp(3.6rem, 10vw, 10rem);
+  overflow-x: hidden;
+}
+
+.hero-content {
+  position: relative;
+  padding: 3rem;
+}
+
+.hero-title {
+  color: var(--title-color);
+  font-size: clamp(3.6rem, 10vw, 4.5rem);
+  line-height: 1;
+  margin-bottom: var(--title-margin-bottom);
+}
+
+.hero-description {
+  font-weight: 500;
+}
+
+.hero-social_Medias {
+  display: flex;
+  width: clamp(12rem, 10vh, 15rem);
+  justify-content: space-between;
+}
+
+.m-icon:hover,
+.m-icon:focus {
+  opacity: 0.7;
+}
+
+/* background graphs */
+.graph {
+  position: absolute;
+}
+
+.graph-1 {
+  top: 1px;
+  right: -3rem;
+}
+
+.graph-2 {
+  top: 5px;
+  left: -2rem;
+}
+
+.graph-3 {
+  bottom: 7rem;
+  right: 5rem;
+}
+
+.graph-4 {
+  bottom: 1rem;
+  right: 7rem;
+}
+
+.graph-5 {
+  top: 3.5rem;
+  left: 7rem;
+}
+
+/* background circle */
+.circle {
+  position: absolute;
+}
+
+.circle-1 {
+  top: 1rem;
+  right: 10rem;
+}
+
+.circle-2 {
+  top: 13rem;
+  right: 4rem;
+}
+
+.circle-3 {
+  bottom: 3rem;
+  left: 4.5rem;
+}
