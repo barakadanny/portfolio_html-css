@@ -18,6 +18,7 @@
   --paragraph-color: #344563;
   --title-margin-bottom: 1.2rem;
   --rgba--background: rgba(235, 235, 255, 0.5);
+  --line-color: #dfe1e6;
 }
 
 /* general css */
@@ -292,7 +293,7 @@ body {
 }
 
 .skill-line {
-  border-top: 1px solid var(--rgba--background);
+  border-top: 1px solid var(--line-color);
 }
 
 .single-skill-desc-content {
