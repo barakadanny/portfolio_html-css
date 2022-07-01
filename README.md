@@ -24,9 +24,9 @@ To get a local copy up and running follow these simple example steps.
 - in your command line type `git clone https://github.com/barakadanny/portfolio_hrml-css.git`
 - open the project in your browser
 
-## Baraka Danny
+## Contributor
 
-👤 **Author1**
+👤 **Baraka Danny**
 
 - GitHub: [@barakadanny](https://github.com/barakadanny)
 - LinkedIn: [@danny-baraka](https://www.linkedin.com/in/danny-baraka-589156169/)
