@@ -310,6 +310,7 @@ body {
   background-color: var(--secondary-color);
   border-top-left-radius: 100px 70px;
 }
+
 .contact-content_desc {
   width: 80%;
   margin: 0 auto;
@@ -371,9 +372,11 @@ textarea::placeholder {
   .nav {
     padding: 0 5rem;
   }
+
   .nav-toggle {
     display: none;
   }
+
   .nav-menu {
     display: inline-flex;
   }
@@ -410,11 +413,12 @@ textarea::placeholder {
     grid-template-columns: 1fr;
   }
 
-  .work-img{
+  .work-img {
     display: flex;
     justify-content: center;
     width: 50%;
   }
+
   .work-img_c {
     width: 100%;
     height: 100%;
