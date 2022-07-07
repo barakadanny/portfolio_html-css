@@ -207,16 +207,20 @@ body {
   display: flex;
   margin-bottom: 0.8rem;
   justify-content: space-between;
-  width: clamp(12rem, 10vw, 13rem);
+  align-items: center;
+  text-align: center;
+  width: clamp(13rem, 10vw, 14rem);
+  padding: 0.2rem 0.1rem;
   font-size: 12px;
 }
 
 .work-chronical-title {
+  font-size: 15px;
   font-weight: 700;
 }
 
 .work-description {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
 }
 
