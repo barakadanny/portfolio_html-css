@@ -193,6 +193,7 @@ body {
   align-items: center;
   padding: 1rem 1rem 2rem 1rem;
   border-radius: 25px;
+  transition: transform .5s ease-out,border-bottom .5s ease-out;
 }
 
 .work-content {
@@ -490,4 +491,11 @@ textarea::placeholder {
   .content-main {
     width: 60%;
   }
+}
+.single-work:hover{
+  transform: scale(1.05);
+  border-bottom:1.5px solid var(--secondary-color);
+  box-shadow: 1px 0px 24px 2px rgba(0,0,0,0.49);
+  -webkit-box-shadow: 1px 0px 24px 2px rgba(0,0,0,0.49);
+  -moz-box-shadow: 1px 0px 24px 2px rgba(0,0,0,0.49);
 }
