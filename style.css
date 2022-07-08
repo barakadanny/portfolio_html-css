@@ -21,6 +21,7 @@
   --rgba--background: rgba(235, 235, 255, 0.5);
   --line-color: #dfe1e6;
   --input-border-color: #cdf8dc;
+  --margin-bottom-1: 1rem;
 }
 
 /* general css */
@@ -35,6 +36,7 @@ p {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 h1 {
@@ -87,6 +89,11 @@ body {
   opacity: 0.7;
 }
 
+.content-main {
+  width: 80%;
+  margin: 0 auto;
+}
+
 /* header css */
 .nav {
   display: flex;
@@ -111,25 +118,43 @@ body {
   display: none;
 }
 
+.nav-menu ul {
+  display: flex;
+}
+
+.nav-menu ul li {
+  color: var(--title-color);
+  margin-right: 1rem;
+  transition: color 0.3s ease-out;
+}
+
+.nav-menu ul li:hover {
+  color: var(--secondary-color);
+}
+
 /* hero section */
 .hero {
   position: relative;
   background-color: var(--white-color);
+  background-image: url(/img/graph_1.png), url(/img/graph_2.png), url(/img/graph_3.png), url(/img/graph_4.png), url(/img/graph_5.png);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: 100px, 50px, 28px, 50px, 30px;
+  background-position: 111% 5%, -8% 4%, 80% 80%, 60% 95%, 40% 6%;
   border-bottom-left-radius: 100px 70px;
-  padding-top: clamp(5rem, 10vw, 10rem);
-  padding-bottom: clamp(3.6rem, 10vw, 10rem);
+  padding-top: 5rem;
+  padding-bottom: 3.6rem;
   overflow-x: hidden;
 }
 
 .hero-content {
   position: relative;
-  padding: 3rem;
 }
 
 .hero-title {
   color: var(--title-color);
-  font-size: clamp(3.6rem, 10vw, 4.5rem);
-  line-height: 1;
+  font-size: 3rem;
+  line-height: 1.1;
+  font-weight: 600;
   margin-bottom: var(--title-margin-bottom);
 }
 
@@ -149,66 +174,16 @@ body {
   opacity: 0.7;
 }
 
-/* background graphs */
-.graph {
-  position: absolute;
-}
-
-.graph-1 {
-  top: 1px;
-  right: -3rem;
-}
-
-.graph-2 {
-  top: 5px;
-  left: -2rem;
-}
-
-.graph-3 {
-  bottom: 7rem;
-  right: 5rem;
-}
-
-.graph-4 {
-  bottom: 1rem;
-  right: 7rem;
-}
-
-.graph-5 {
-  top: 3.5rem;
-  left: 7rem;
-}
-
-/* background circle */
-.circle {
-  position: absolute;
-}
-
-.circle-1 {
-  top: 1rem;
-  right: 10rem;
-}
-
-.circle-2 {
-  top: 13rem;
-  right: 4rem;
-}
-
-.circle-3 {
-  bottom: 3rem;
-  left: 4.5rem;
-}
-
 /* work section */
 .work {
   position: relative;
 }
 
 .works {
-  padding: 3rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
   gap: 80px 20px;
+  padding: 3rem 0;
 }
 
 .single-work {
@@ -232,21 +207,26 @@ body {
   display: flex;
   margin-bottom: 0.8rem;
   justify-content: space-between;
-  width: clamp(12rem, 10vw, 13rem);
+  align-items: center;
+  text-align: center;
+  width: clamp(13rem, 10vw, 14rem);
+  padding: 0.2rem 0.1rem;
   font-size: 12px;
 }
 
 .work-chronical-title {
+  font-size: 15px;
   font-weight: 700;
 }
 
 .work-description {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
 }
 
 .work-stacks {
   display: flex;
+  margin-bottom: 1rem;
 }
 
 .single-stack {
@@ -263,13 +243,13 @@ body {
 /* about myself section */
 .about {
   position: relative;
+  background-color: var(--white-color);
+  border-top-right-radius: 100px 70px;
 }
 
 .about-content {
-  padding: 3rem;
   padding-top: 5rem;
-  background-color: var(--white-color);
-  border-top-right-radius: 100px 70px;
+  padding-bottom: 5rem;
 }
 
 .about-content_desc {
@@ -328,11 +308,16 @@ body {
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: 95px, 100px, 28px;
   background-position: 77% 95%, 110% 3%, 40% 10%;
-  padding: 3rem;
   padding-top: 6rem;
+  padding-bottom: 6rem;
   display: flex;
   background-color: var(--secondary-color);
   border-top-left-radius: 100px 70px;
+}
+
+.contact-content_desc {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .contact-title {
@@ -383,4 +368,126 @@ textarea::placeholder {
 .contact-btn:hover {
   background-color: var(--secondary-color);
   color: var(--white-color);
+}
+
+/* ===========================Media queries======================== */
+@media screen and (min-width: 768px) {
+  /* navbar */
+  .nav {
+    padding: 0 5rem;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-menu {
+    display: inline-flex;
+  }
+
+  /* header */
+  .hero-title {
+    font-size: 3.5rem;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 120px, 50px, 28px, 50px, 30px;
+    background-position: 85% 20%, 3% 4%, 20% 80%, 60% 80%, 55% 20%;
+    height: 90vh;
+  }
+
+  .hero-content {
+    width: 70%;
+    padding: 2rem;
+  }
+
+  .hero-description {
+    max-width: 45rem;
+  }
+
+  /* work section */
+  .work {
+    padding: 5rem 0;
+  }
+
+  .works {
+    grid-template-columns: 1fr;
+  }
+
+  .work-img {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .work-img_c {
+    width: 100%;
+    height: 100%;
+  }
+
+  .single-work {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .work-content {
+    width: 50%;
+  }
+
+  .right-order :nth-child(1) {
+    order: 1;
+  }
+
+  .work-content .work-title {
+    margin-bottom: 1rem;
+  }
+
+  /* about section */
+  .about-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about-content_desc {
+    width: 40%;
+  }
+
+  .about-skills {
+    width: 55%;
+  }
+
+  .single-skill-desc {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .single-skill-desc-content {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .single-skill-desc-t {
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  /* contact section */
+  .contact-content_desc {
+    width: 40%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  /* navbar */
+  .nav {
+    padding: 0 12rem;
+  }
+
+  .content-main {
+    width: 60%;
+  }
 }
