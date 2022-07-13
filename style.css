@@ -136,7 +136,7 @@ body {
 .hero {
   position: relative;
   background-color: var(--white-color);
-  background-image: url(/img/graph_1.png), url(/img/graph_2.png), url(/img/graph_3.png), url(/img/graph_4.png), url(/img/graph_5.png);
+  background-image: url(img/graph_1.png), url(img/graph_2.png), url(img/graph_3.png), url(img/graph_4.png), url(img/graph_5.png);
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   background-size: 100px, 50px, 28px, 50px, 30px;
   background-position: 111% 5%, -8% 4%, 80% 80%, 60% 95%, 40% 6%;
@@ -324,7 +324,7 @@ body {
 }
 
 .contact-content {
-  background-image: url(/img/contact-graph-2.png), url(/img/contact-graph-1.png), url(/img/contact-circle-1.png);
+  background-image: url(img/contact-graph-2.png), url(img/contact-graph-1.png), url(img/contact-circle-1.png);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: 95px, 100px, 28px;
   background-position: 77% 95%, 110% 3%, 40% 10%;
