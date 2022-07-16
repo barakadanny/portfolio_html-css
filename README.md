@@ -7,6 +7,10 @@
 - HTML
 - CSS
 
+## Live Demo 
+
+[Live Demo Link](https://barakadanny.github.io/portfolio_html-css/)
+
 ## Getting Started
 
 **This is an example of how you may give instructions on setting up your project locally.**
