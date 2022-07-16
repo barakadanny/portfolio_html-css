@@ -9,6 +9,12 @@
 
 ## Live Demo 
 
+
+
+[Live Demo Link](https://barakadanny.github.io/portfolio_html-css/)
+
+## Getting Started
+
 [Live Demo Link](https://barakadanny.github.io/portfolio_html-css/)
 
 
