@@ -112,6 +112,10 @@ body {
 
 .nav-toggle-c {
   z-index: 9999;
+  position: absolute;
+  right: 50px;
+  top: 25px;
+  cursor: pointer;
 }
 
 .nav-toggle:hover {
@@ -137,11 +141,11 @@ body {
 }
 
 .mobile-menu {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
   inset: 0 0 0 0%;
   position: fixed;
-  padding: min(30vh, 3rem) 2em;
+  padding: min(30vh, 5rem) 2em;
   background: rgba(96, 112, 255, 0.7);
   backdrop-filter: blur(0.7rem);
   z-index: 100;
