@@ -12,7 +12,7 @@
 /* css variables */
 :root {
   --primary-color: #344563;
-  --secondary-color: #6070ff;
+  --secondary-color: rgb(96, 112, 255);
   --white-color: #fff;
   --title-color: #172b4d;
   --paragraph-color: #344563;
@@ -110,6 +110,10 @@ body {
   color: var(--secondary-color);
 }
 
+.nav-toggle-c {
+  z-index: 9999;
+}
+
 .nav-toggle:hover {
   cursor: pointer;
 }
@@ -130,6 +134,29 @@ body {
 
 .nav-menu ul li:hover {
   color: var(--secondary-color);
+}
+
+.mobile-menu {
+  display: flex;
+  justify-content: space-between;
+  inset: 0 0 0 0%;
+  position: fixed;
+  padding: min(30vh, 3rem) 2em;
+  background: rgba(96, 112, 255, 0.7);
+  backdrop-filter: blur(0.7rem);
+  z-index: 100;
+}
+
+.mobile-menu ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-item-m {
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-size: 26px;
+  color: var(--white-color);
 }
 
 /* hero section */
@@ -398,6 +425,14 @@ textarea::placeholder {
   }
 
   .nav-toggle {
+    display: none;
+  }
+
+  .nav-toggle-c {
+    display: none;
+  }
+  
+  .mobile-menu {
     display: none;
   }
 
