@@ -382,7 +382,7 @@ body {
 
 .contact-title {
   color: var(--white-color);
-  font-size: clamp(1rem, 10vw, 2rem);
+  font-size: 1rem;
   line-height: 10px;
   text-align: center;
   margin-bottom: var(--title-margin-bottom);
@@ -444,7 +444,7 @@ textarea::placeholder {
   .nav-toggle-c {
     display: none;
   }
-  
+
   .mobile-menu {
     display: none;
   }
