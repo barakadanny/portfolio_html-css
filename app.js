@@ -1,15 +1,15 @@
-const navToggleClose = document.querySelector(".nav-toggle-c");
-const menu = document.querySelector(".mobile-menu");
-const navToggleOpen = document.querySelector(".nav-toggle");
+const navToggleClose = document.querySelector(`.nav-toggle-c`);
+const menu = document.querySelector(`.mobile-menu`);
+const navToggleOpen = document.querySelector(`.nav-toggle`);
 
 // Event listener open the menu
-navToggleOpen.addEventListener("click", (e) => {
+navToggleOpen.addEventListener(`click`, (e) => {
   e.preventDefault();
-  menu.classList.add("show-menu");
+  menu.classList.add(`show-menu`);
 });
 
 // Event listener close the menu
-navToggleClose.addEventListener("click", (e) => {
+navToggleClose.addEventListener(`click`, (e) => {
   e.preventDefault();
-  menu.classList.remove("show-menu");
+  menu.classList.remove(`show-menu`);
 });
