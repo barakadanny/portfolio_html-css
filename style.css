@@ -94,10 +94,6 @@ body {
   margin: 0 auto;
 }
 
-body {
-  position: relative;
-}
-
 /* header css */
 .nav {
   display: flex;
@@ -451,15 +447,15 @@ textarea::placeholder {
     transform: translateX(0);
   }
 
-    .nav-menu ul {
-      flex-direction: row;
-    }
-    
-    .nav-item {
-      margin-right: 0;
-      font-size: 16px;
-      padding-top: 2rem;
-    }
+  .nav-menu ul {
+    flex-direction: row;
+  }
+
+  .nav-item {
+    margin-right: 0;
+    font-size: 16px;
+    padding-top: 2rem;
+  }
 
   /* header */
   .hero-title {
