@@ -1,5 +1,5 @@
 const navToggleClose = document.querySelector('.nav-toggle-c');
-const menu = document.querySelector('.mobile-menu');
+const menu = document.querySelector('.nav-menu');
 const navToggleOpen = document.querySelector('.nav-toggle');
 
 // Event listener open the menu
