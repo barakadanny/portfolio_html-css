@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Baraka Danny || Portfolio</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -28,13 +29,6 @@
         <div class="nav-toggle">
           <img src="img/toggle.png" alt="" />
         </div>
-        <!-- <div class="mobile-menu ">
-          <ul>
-            <li class="nav-item-m"><a href="#portfolio">Portfolio</a></li>
-            <li class="nav-item-m"><a href="#about">About</a></li>
-            <li class="nav-item-m"><a href="#contact">Contact</a></li>
-          </ul>
-        </div> -->
       </nav>
     </header>
 
@@ -87,113 +81,8 @@
       <!-- work section -->
       <section class="work" id="portfolio">
         <div class="works content-main">
-          <!-- single work -->
-          <div class="single-work">
-            <div class="work-img">
-              <img src="img/work-1.png" alt="tonic" class="work-img_c" />
-            </div>
-            <div class="work-content">
-              <h1 class="work-title">Tonic</h1>
-              <ul class="work-chronical">
-                <li class="work-chronical-title">CANOPY</li>
-                <li class="work-chronical_c">Back End Dev</li>
-                <li class="work-chronical_c">2015</li>
-              </ul>
-              <p class="work-description">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required.
-              </p>
-              <ul class="work-stacks">
-                <li class="single-stack">html</li>
-                <li class="single-stack">Css</li>
-                <li class="single-stack">JavaScript</li>
-              </ul>
-              <a href="" class="primary-btn">See Projects</a>
-            </div>
-          </div>
+          <!-- Works are generated dynamically from js -->
 
-          <!-- single work -->
-          <div class="single-work right-order">
-            <div class="work-img">
-              <img
-                src="img/work-2.png"
-                alt="multi-post stories"
-                class="work-img_c"
-              />
-            </div>
-            <div class="work-content">
-              <h1 class="work-title">Multi-Post stories</h1>
-              <ul class="work-chronical">
-                <li class="work-chronical-title">CANOPY</li>
-                <li class="work-chronical_c">Back End Dev</li>
-                <li class="work-chronical_c">2015</li>
-              </ul>
-              <p class="work-description">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required.
-              </p>
-              <ul class="work-stacks">
-                <li class="single-stack">html</li>
-                <li class="single-stack">Css</li>
-                <li class="single-stack">JavaScript</li>
-              </ul>
-              <a href="" class="primary-btn">See Projects</a>
-            </div>
-          </div>
-
-          <!-- single work -->
-          <div class="single-work">
-            <div class="work-img">
-              <img src="img/work-3.png" alt="tonic" class="work-img_c" />
-            </div>
-            <div class="work-content">
-              <h1 class="work-title">Tonic</h1>
-              <ul class="work-chronical">
-                <li class="work-chronical-title">CANOPY</li>
-                <li class="work-chronical_c">Back End Dev</li>
-                <li class="work-chronical_c">2015</li>
-              </ul>
-              <p class="work-description">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required.
-              </p>
-              <ul class="work-stacks">
-                <li class="single-stack">html</li>
-                <li class="single-stack">Css</li>
-                <li class="single-stack">JavaScript</li>
-              </ul>
-              <a href="" class="primary-btn">See Projects</a>
-            </div>
-          </div>
-
-          <!-- single work -->
-          <div class="single-work right-order">
-            <div class="work-img">
-              <img
-                src="img/work-4.png"
-                alt="multi-post stories"
-                class="work-img_c"
-              />
-            </div>
-            <div class="work-content">
-              <h1 class="work-title">Multi-Post stories</h1>
-              <ul class="work-chronical">
-                <li class="work-chronical-title">CANOPY</li>
-                <li class="work-chronical_c">Back End Dev</li>
-                <li class="work-chronical_c">2015</li>
-              </ul>
-              <p class="work-description">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required.
-              </p>
-              <ul class="work-stacks">
-                <li class="single-stack">html</li>
-                <li class="single-stack">Css</li>
-                <li class="single-stack">JavaScript</li>
-              </ul>
-              <a href="" class="primary-btn">See Projects</a>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -340,7 +229,47 @@
           </div>
         </div>
       </section>
+
+      <!-- modal -->
+      <div class="modal" id="modal">
+        <div class="modal-header">
+          <div class="modal-title">
+            <h1 class="work-title">Tonic</h1>
+            <button data-close-button class="close-modal-btn">
+              <i class="uil uil-times"></i>
+            </button>
+          </div>
+          <ul class="work-chronical">
+            <li class="work-chronical-title">CANOPY</li>
+            <li class="work-chronical_c">Back End Dev</li>
+            <li class="work-chronical_c">2015</li>
+          </ul>
+        </div>
+        <div class="modal-body">
+          <div class="modal-body_img">
+            <img src="img/work-1.png" alt="tonic" class="modal-img" />
+          </div>
+          <div class="modal-body_desc">
+            <p class="work-description">
+              Tonic is a simple, fast, and powerful HTTP framework for Node.js.
+              It's a thin wrapper around Express, adding powerful features like
+              automatic routing, dependency injection, and more.
+            </p>
+            <ul class="work-stacks">
+              <li class="single-stack">html</li>
+              <li class="single-stack">Css</li>
+              <li class="single-stack">JavaScript</li>
+            </ul>
+            <div class="modal-cta-btn">
+              <a href="" class="primary-btn">See live <i class="uil uil-external-link-alt"></i></a>
+              <a href="" class="primary-btn">See Source<i class="uil uil-github-alt"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div  id="overlays"></div>
+
     </main>
-    <script type="text/javascript" src="app.js"></script>
+    <script defer src="app.js"></script>
   </body>
 </html>
