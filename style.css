@@ -493,10 +493,6 @@ textarea::placeholder {
 }
 
 .modal-cta-btn {
-  flex-wrap: wrap;
-}
-
-.modal-cta-btn {
   display: flex;
   justify-content: space-around;
   padding: 1rem 2rem;
@@ -507,7 +503,7 @@ textarea::placeholder {
 
 .modal-btn {
   font-weight: 600;
-  font-size:13px;
+  font-size: 13px;
   color: var(--secondary-color);
   padding: 7px 8px;
   border-radius: 5px;
@@ -660,20 +656,20 @@ textarea::placeholder {
     width: 800px;
     max-width: 80%;
   }
+
   .modal-body_desc {
     display: flex;
   }
-  
+
   .modal-img {
     width: 100%;
     max-height: 400px;
   }
-  
+
   .work-description-modal {
     padding: 1rem;
     width: 60%;
   }
-  
 }
 
 @media screen and (min-width: 1150px) {
