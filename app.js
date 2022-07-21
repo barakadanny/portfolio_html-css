@@ -53,7 +53,7 @@ const works = [
 ];
 
 // generate dynamic work Cards
-for (var i = 0; i < works.length; i++) {
+for (let i = 0; i < works.length; i += 1) {
   const work = works[i];
 
   const workElement = document.createElement('div');
@@ -83,7 +83,7 @@ for (var i = 0; i < works.length; i++) {
     </div>
   `;
   worksCard.appendChild(workElement);
-  const modal = document.querySelector(`#${work.id}`);
+  // const modal = document.querySelector(`#${work.id}`);
   // workElement.addEventListener('click', () => {
   //   openModal(modal);
   // });
@@ -103,7 +103,19 @@ navToggleClose.addEventListener('click', (e) => {
   menu.classList.remove('show-menu');
 });
 
+// modal functions open and closed
+function closeModal(modal) {
+  if (modal == null) return;
+  modal.classList.remove('actives');
+  overlay.classList.remove('actives');
+}
+
 // generate dynamic modal cards
+function openModal(modal) {
+  if (modal == null) return;
+  modal.classList.add('actives');
+  overlay.classList.add('actives');
+}
 
 openModalButtons.forEach((button) => {
   button.addEventListener('click', (e) => {
@@ -128,12 +140,6 @@ overlay.addEventListener('click', () => {
   });
 });
 
-function closeModal(modal) {
-  if (modal == null) return;
-  modal.classList.remove('actives');
-  overlay.classList.remove('actives');
-}
-
 closeModalButtons.forEach((button) => {
   button.addEventListener('click', (e) => {
     e.preventDefault();
@@ -141,9 +147,3 @@ closeModalButtons.forEach((button) => {
     closeModal(modal);
   });
 });
-
-function openModal(modal) {
-  if (modal == null) return;
-  modal.classList.add('actives');
-  overlay.classList.add('actives');
-}
