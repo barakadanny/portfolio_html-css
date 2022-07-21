@@ -13,7 +13,8 @@ const works = [
   {
     id: 'modal1',
     title: 'Tonic',
-    description: 'This is a portfolio website for my personal portfolio.',
+    description:
+      'This is a portfolio website for my personal portfolioThis is a portfolio website for my personal portfolio.',
     image: 'img/work-1.png',
     chronical: ['CANOPY', 'Back End Dev', '2015'],
     stack: ['html', 'css', 'javascript'],
@@ -23,7 +24,8 @@ const works = [
   {
     id: 'modal2',
     title: 'Multi-Post stories',
-    description: 'This is a portfolio website for my personal portfolio.',
+    description:
+      'This is a portfolio website for my personal portfolio This is a portfolio website for my personal portfolio.',
     image: 'img/work-2.png',
     chronical: ['CANOPY', 'Back End Dev', '2015'],
     stack: ['html', 'css', 'javascript'],
@@ -33,7 +35,8 @@ const works = [
   {
     id: 'modal3',
     title: 'Tonic',
-    description: 'This is a portfolio website for my personal portfolio.',
+    description:
+      'This is a portfolio website for my personal portfolio This is a portfolio website for my personal portfolio.',
     image: 'img/work-3.png',
     chronical: ['CANOPY', 'Back End Dev', '2015'],
     stack: ['html', 'css', 'javascript'],
@@ -43,7 +46,8 @@ const works = [
   {
     id: 'modal4',
     title: 'Multi-Post stories',
-    description: 'This is a portfolio website for my personal portfolio.',
+    description:
+      'This is a portfolio website for my personal portfolio This is a portfolio website for my personal portfolio.',
     image: 'img/work-4.png',
     chronical: ['CANOPY', 'Back End Dev', '2015'],
     stack: ['html', 'css', 'javascript'],

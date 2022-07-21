@@ -464,7 +464,12 @@ textarea::placeholder {
   display: flex;
   justify-content: space-around;
   padding: 1rem 2rem;
+  font-size: 26px;
   border-top: 1px solid var(--line-color);
+}
+
+.modal-cta-btn i {
+  margin-left: 0.5rem;
 }
 
 #overlays {
@@ -545,7 +550,7 @@ textarea::placeholder {
 
   /* work section */
   .work {
-    padding: 5rem 0;
+    padding: 0.5rem 0;
   }
 
   .works {
@@ -613,6 +618,12 @@ textarea::placeholder {
   .contact-content_desc {
     width: 40%;
     margin: 0 auto;
+  }
+
+  /* modal */
+  .modal {
+    width: 800px;
+    max-width: 80%;
   }
 }
 
