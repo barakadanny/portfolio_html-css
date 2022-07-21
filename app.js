@@ -2,7 +2,7 @@ const navToggleClose = document.querySelector('.nav-toggle-c');
 const menu = document.querySelector('.nav-menu');
 const navToggleOpen = document.querySelector('.nav-toggle');
 const worksCard = document.querySelector('.works');
-const modalCard = document.querySelector('.modal');
+// const modalCard = document.querySelector('.modal');
 
 // modal selectors
 const closeModalButtons = document.querySelectorAll('[data-close-button]');
@@ -84,11 +84,11 @@ for (var i = 0; i < works.length; i++) {
   `;
   worksCard.appendChild(workElement);
   const modal = document.querySelector(`#${work.id}`);
-  workElement.addEventListener('click', () => {
-    dynamicModal(modal);
-  });
+  // workElement.addEventListener('click', () => {
+  //   openModal(modal);
+  // });
 }
-console.log('id ${work.id}');
+
 const openModalButtons = document.querySelectorAll('[data-modal-target]');
 
 // Event listener open the menu
@@ -109,7 +109,7 @@ openModalButtons.forEach((button) => {
   button.addEventListener('click', (e) => {
     e.preventDefault();
     const modal = document.querySelector(e.target.dataset.modalTarget);
-    dynamicModal(modal);
+    openModal(modal);
   });
 });
 
@@ -128,6 +128,12 @@ overlay.addEventListener('click', () => {
   });
 });
 
+function closeModal(modal) {
+  if (modal == null) return;
+  modal.classList.remove('actives');
+  overlay.classList.remove('actives');
+}
+
 closeModalButtons.forEach((button) => {
   button.addEventListener('click', (e) => {
     e.preventDefault();
@@ -140,10 +146,4 @@ function openModal(modal) {
   if (modal == null) return;
   modal.classList.add('actives');
   overlay.classList.add('actives');
-}
-
-function closeModal(modal) {
-  if (modal == null) return;
-  modal.classList.remove('actives');
-  overlay.classList.remove('actives');
 }

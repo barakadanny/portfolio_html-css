@@ -445,6 +445,7 @@ textarea::placeholder {
   width: 100%;
   justify-content: space-between;
 }
+
 .close-modal-btn {
   cursor: pointer;
   border: none;
