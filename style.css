@@ -487,6 +487,33 @@ textarea::placeholder {
   display: block;
 }
 
+.modal-body_desc {
+  display: flex;
+
+}
+
+.modal-img {
+  width: 100%;
+  max-height: 400px;
+}
+
+.modal-btn {
+
+}
+
+.modal-stacks {
+  display: flex;
+}
+
+.modal-stack {
+  padding: 2px 5px;
+  margin: 3px;
+  height: 1.8rem;
+  border-radius: 10px;
+  background-color: #ebebff;
+  color: #6070ff;
+}
+
 /* ===========================Media queries======================== */
 @media screen and (min-width: 768px) {
   /* navbar */
