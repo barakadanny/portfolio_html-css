@@ -460,14 +460,6 @@ textarea::placeholder {
   color: var(--secondary-color);
 }
 
-.modal-cta-btn {
-  display: flex;
-  justify-content: space-around;
-  padding: 1rem 2rem;
-  font-size: 26px;
-  border-top: 1px solid var(--line-color);
-}
-
 .modal-cta-btn i {
   margin-left: 0.5rem;
 }
@@ -487,20 +479,6 @@ textarea::placeholder {
   display: block;
 }
 
-.modal-body_desc {
-  display: flex;
-
-}
-
-.modal-img {
-  width: 100%;
-  max-height: 400px;
-}
-
-.modal-btn {
-
-}
-
 .modal-stacks {
   display: flex;
 }
@@ -512,6 +490,36 @@ textarea::placeholder {
   border-radius: 10px;
   background-color: #ebebff;
   color: #6070ff;
+}
+
+.modal-cta-btn {
+  flex-wrap: wrap;
+}
+
+.modal-cta-btn {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 2rem;
+  font-size: 26px;
+  border-top: 1px solid var(--line-color);
+  margin-top: 1rem;
+}
+
+.modal-btn {
+  font-weight: 600;
+  font-size:13px;
+  color: var(--secondary-color);
+  padding: 7px 8px;
+  border-radius: 5px;
+  border: 1px solid var(--secondary-color);
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease-out;
+  margin-right: 1rem;
+}
+
+.modal-btn:hover {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
 }
 
 /* ===========================Media queries======================== */
@@ -652,6 +660,20 @@ textarea::placeholder {
     width: 800px;
     max-width: 80%;
   }
+  .modal-body_desc {
+    display: flex;
+  }
+  
+  .modal-img {
+    width: 100%;
+    max-height: 400px;
+  }
+  
+  .work-description-modal {
+    padding: 1rem;
+    width: 60%;
+  }
+  
 }
 
 @media screen and (min-width: 1150px) {
