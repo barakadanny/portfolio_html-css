@@ -22,6 +22,7 @@
   --line-color: #dfe1e6;
   --input-border-color: #cdf8dc;
   --margin-bottom-1: 1rem;
+  --error-color: red;
 }
 
 /* general css */
@@ -418,6 +419,12 @@ textarea::placeholder {
 .contact-btn:hover {
   background-color: var(--secondary-color);
   color: var(--white-color);
+}
+
+.form-group span {
+  color: var(--error-color);
+  font-weight: 400;
+  font-size: 14px;
 }
 
 /* =========== modal css ======== */

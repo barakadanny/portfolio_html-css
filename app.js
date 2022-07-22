@@ -2,7 +2,6 @@ const navToggleClose = document.querySelector('.nav-toggle-c');
 const menu = document.querySelector('.nav-menu');
 const navToggleOpen = document.querySelector('.nav-toggle');
 const worksCard = document.querySelector('.works');
-// const modalCard = document.querySelector('.modal');
 
 // modal selectors
 const closeModalButtons = document.querySelectorAll('[data-close-button]');
@@ -87,10 +86,6 @@ for (let i = 0; i < works.length; i += 1) {
     </div>
   `;
   worksCard.appendChild(workElement);
-  // const modal = document.querySelector(`#${work.id}`);
-  // workElement.addEventListener('click', () => {
-  //   openModal(modal);
-  // });
 }
 
 const openModalButtons = document.querySelectorAll('[data-modal-target]');
@@ -150,4 +145,21 @@ closeModalButtons.forEach((button) => {
     const modal = button.closest('.modal');
     closeModal(modal);
   });
+});
+
+/* Form Validation */
+
+const email = document.getElementById('email');
+const form = document.getElementById('input');
+const displayMsg = document.getElementById('form-message-error');
+
+form.addEventListener('submit', (event) => {
+  if (email.value !== email.value.toLowerCase()) {
+    event.preventDefault();
+    displayMsg.style.visibility = 'visible';
+    displayMsg.classList.add('error-message');
+    displayMsg.textContent = 'Your email address should be in lowercase';
+  } else {
+    displayMsg.style.visibility = 'hidden';
+  }
 });
