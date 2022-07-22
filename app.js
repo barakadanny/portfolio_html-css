@@ -1,6 +1,6 @@
 const navToggleClose = document.querySelector('.nav-toggle-c');
 const menu = document.querySelector('.nav-menu');
-const navToggleOpen = document.querySelector('.nav-toggle');
+const navToggleOpen = document.querySelector('.navtoggle');
 const worksCard = document.querySelector('.works');
 
 // modal selectors
