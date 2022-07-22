@@ -163,3 +163,5 @@ form.addEventListener('submit', (event) => {
     displayMsg.style.visibility = 'hidden';
   }
 });
+
+// localStorage
